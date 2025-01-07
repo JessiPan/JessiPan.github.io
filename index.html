@@ -144,7 +144,7 @@
 <h2 id="数学公式-Latex格式"><a href="#数学公式-Latex格式" class="headerlink" title="数学公式 Latex格式"></a>数学公式 Latex格式</h2><p>在index.html文件的&lt;head&gt;中添加以下math.jax代码段</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://polyfill.io/v3/polyfill.min.js?features=es6&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">&quot;MathJax-script&quot;</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="失效域名问题"><a href="#失效域名问题" class="headerlink" title="失效域名问题"></a>失效域名问题</h2><p>原因在于，当在YOUR_NAME.github.io这个仓库的设置里手动添加域名的时候，其实是在远程仓库(也就是github)新增了一个CNAME文件，里面装着自定义域名，可以失效后手动添加完去看看commit记录。</p>
+<h2 id="失效域名问题"><a href="#失效域名问题" class="headerlink" title="失效域名问题"></a>失效域名问题</h2><p>原因在于，在YOUR_NAME.github.io这个仓库的设置里手动添加域名的时候，其实是在远程仓库(也就是github)新增了一个CNAME文件，里面装着自定义域名，可以失效后手动添加完去看看commit记录。</p>
 <p>但是本地的博客源文件是没有这个CNAME文件的，所以每次hexo d都会覆盖掉github上的CNAME，导致域名失效。</p>
 <p>   $$<br>   \lim_{x \to 1}\frac{a}{b}&#x3D;1<br>   $$</p>
 <p>在文字中插入Latex公式 $\lim_{x \to 1}\frac{a}{b}&#x3D;1$ </p>
